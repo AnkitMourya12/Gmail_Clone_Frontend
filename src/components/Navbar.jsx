@@ -18,7 +18,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const logoutHandler = async () => {
         try {
-            const res = await axios.get('https://gmail-clone-backend-pv9p.onrender.com/api/v1/user/logout',{withCredentials:true});
+            const res = await axios.get('https://gmail-clone-backend-o9wh.onrender.com/api/v1/user/logout',{withCredentials:true});
             console.log(res);
             toast.success(res.data.message);
             dispatch(setAuthUser(null));
